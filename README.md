@@ -20,7 +20,7 @@
 - GANs (Redes Generativas Adversariais)
 - Jupyter Notebook
 - CUDA (para aceleração com GPU, opcional)
-- 
+
 ## 🧠 Descrição
 
 Este projeto tem como foco a aplicação de conceitos de *deep learning* e modelos generativos para criação de imagens. A ideia central é investigar, implementar e testar arquiteturas baseadas em pesquisas da DeepMind, especialmente voltadas à geração de imagens realistas e complexas.
