@@ -14,7 +14,7 @@ Este projeto tem como objetivo **extrair e estruturar automaticamente questões 
 
 ---
 
-Link do projeto rodando no Google Colab: https://colab.research.google.com/drive/12Rce8t_LEC8ugomN61puebgi9kVy-Wd-?usp=sharing
+Link do projeto rodando no Google Colab: https://colab.research.google.com/drive/12Rce8t_LEC8ugomN61puebgi9kVy-Wd-?usp=sharing\n
 Link do sistema MetaConquista: https://metaconquista.vercel.app/
 
 ## 📂 Estrutura do Projeto
