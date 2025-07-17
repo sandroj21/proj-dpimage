@@ -1,6 +1,6 @@
-# 🧠 PDF Questão Parser
+# 🧠 ExamOCR
 
-Este projeto extrai e estrutura automaticamente questões de provas em PDF com layout de duas colunas, usando OCR.
+Este projeto extrai e estrutura automaticamente questões de provas em PDF usando OCR.
 
 ## 🚀 Como usar
 
