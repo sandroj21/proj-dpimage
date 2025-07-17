@@ -4,6 +4,7 @@ Este projeto tem como objetivo **extrair e estruturar automaticamente questões 
 
 ---
 
+
 ## 🚀 Funcionalidades
 
 - 📄 Leitura de PDFs com layout de duas colunas.
@@ -12,6 +13,8 @@ Este projeto tem como objetivo **extrair e estruturar automaticamente questões 
 - 💾 Exportação das questões em formato JSON.
 
 ---
+
+Link do projeto rodando no Google Colab: https://colab.research.google.com/drive/12Rce8t_LEC8ugomN61puebgi9kVy-Wd-?usp=sharing
 
 ## 📂 Estrutura do Projeto
 
