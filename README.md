@@ -1,17 +1,31 @@
-# 🧠 ExamOCR
+# 🧠 ExamOCR - Extração Automática de Questões de Provas em PDF
 
-Este projeto tem como objetivo **extrair e estruturar automaticamente questões de provas em PDF**, especialmente documentos com **layout em duas colunas**, utilizando **OCR (Reconhecimento Óptico de Caracteres)**.
-
----
-
-## 🚀 Funcionalidades
-
-- 📄 Leitura de PDFs com layout de duas colunas.
-- 🤖 OCR usando Tesseract (suporte a português e inglês).
-- 🧠 Extração estruturada de questões, enunciado, texto de apoio e alternativas.
-- 💾 Exportação das questões em formato JSON.
+# 1. Introdução
+O objetivo deste trabalho foi automatizar a extração de questões de provas em formato PDF para alimentar o sistema MetaConquista, que é um sistema de aprendizado baseado em questões de simulados de concurso. O ExamOCR foi desenvolvido para realizar essa tarefa de forma eficiente, utilizando OCR para converter texto de provas digitalizadas em um formato estruturado JSON que pode ser integrado diretamente ao banco de dados do MetaConquista.
 
 ---
+
+# 2. Desenvolvimento / Técnicas Utilizadas
+
+🚀 O projeto foi desenvolvido utilizando as seguintes abordagens e tecnologias:
+
+
+- 📄 Leitura de PDFs com Layout em Duas Colunas: Suporta documentos com múltiplas colunas, utilizando técnicas de processamento de imagem para separar as colunas antes de aplicar o OCR.
+
+- 🤖 OCR usando Tesseract: Implementa o Tesseract OCR para converter texto de imagens em conteúdo legível, com suporte para português e inglês.
+
+- 🧠 Extração Estruturada de Questões: Extrai e estrutura as questões, enunciado, texto de apoio e alternativas de maneira automatizada e precisa.
+
+- 💾 Exportação em Formato JSON: A saída é um arquivo JSON contendo as questões extraídas, que pode ser facilmente manipulado e analisado.
+
+- Processamento de PDFs: Usamos a biblioteca PyMuPDF para extrair as imagens de cada página do PDF, considerando o layout de duas colunas.
+
+
+## 2.1 MetaConquista
+
+<img width="1918" height="953" alt="metaconquista" src="https://github.com/user-attachments/assets/78d3f27d-61d4-4f64-b371-9e2685bc51c7" />
+
+
 ## 🔗 Links
 ```
 Google Colab: https://colab.research.google.com/drive/12Rce8t_LEC8ugomN61puebgi9kVy-Wd-?usp=sharing
@@ -92,6 +106,14 @@ python main.py
   }
 }
 ```
+
+---
+
+# 3. Resultados
+
+---
+
+---
 
 ---
 
