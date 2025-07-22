@@ -57,6 +57,8 @@ pdf-question-parser/
 > - Texto de apoio (se houver)
 > - Alternativas
 
+Obs: O código-fonte se encontra de forma fatorada no Github. Contudo, a sua execução está no Google Colab.
+
 ---
 
 ## 🧪 Pré-requisitos
@@ -91,13 +93,14 @@ python main.py
 
 ---
 
-## 📄 Exemplo de Saída
+## 📄 Exemplo de Saída JSON
 
 ```json
 {
-  "numero_questao": 1,
+  "pagina": 6,
+  "coluna": "esquerda",
+  "numero": 1,
   "enunciado": "Qual é a função principal do oxigênio na respiração celular?",
-  "texto_apoio": "“O oxigênio é fundamental para o processo de obtenção de energia nas células...”",
   "alternativas": {
     "a": "Fornecer glicose.",
     "b": "Atuar na digestão.",
