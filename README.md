@@ -27,14 +27,21 @@ O objetivo deste trabalho foi automatizar a extração de questões de provas em
 
 
 ## 🔗 Links
+Sistema MetaConquista: 
 ```
-Google Colab: https://colab.research.google.com/drive/12Rce8t_LEC8ugomN61puebgi9kVy-Wd-?usp=sharing
-
-Frontend: https://github.com/Leopinheiro132/QuestionBank
-
-Sistema MetaConquista: https://metaconquista.vercel.app/
-
+https://metaconquista.vercel.app/
 ```
+
+Google Colab:
+```
+https://colab.research.google.com/drive/12Rce8t_LEC8ugomN61puebgi9kVy-Wd-?usp=sharing
+```
+
+Github do Frontend: 
+```
+https://github.com/Leopinheiro132/QuestionBank
+```
+
 ## 📂 Estrutura do Projeto
 
 ```
@@ -114,18 +121,50 @@ python main.py
 
 # 3. Resultados
 
----
+Após passar o PDF da prova pelo PyMuPDF e convertê-lo em imagem, utilizamos o Pillow para processar as imagens, dividindo-as em duas partes: barra da esquerda e barra da direita. Em seguida, ambas as partes foram analisadas com o Tesseract para extração das perguntas, alternativas, etc., gerando o seguinte resultado:
 
----
+Parte do json real de output:
+```json
+    {
+        "pagina": 10,
+        "coluna": "direita",
+        "numero": 54,
+        "enunciado": "Seja f(x) = ax + b uma fungao polinomial do 1° grau, decrescente, tal que f(3) = 5. Assim, é possivel que",
+        "alternativas": {
+            "a": "3,2",
+            "b": "3,6",
+            "c": "4,2",
+            "d": "4,6"
+        }
+    },
+    {
+        "pagina": 10,
+        "coluna": "direita",
+        "numero": 57,
+        "enunciado": "Seja o triangulo ABC, retangulo em B, tal que o ponto E esta em sua hipotenusa e o ponto D, no cateto AB, conforme a figura. Assim, o valor de b’ + 4c’ é",
+        "alternativas": {
+            "a": "4",
+            "b": "8",
+            "c": "12",
+            "d": "16"
+        }
+    }
+
+```
+esse Json é enviado para o back-end da plataforma onde é armazenado no banco de dados para futuras consultas pela plataforma.
 
 ---
 
 ## 🧠 Tecnologias usadas
-
+ Visão Computacional
 - [PyMuPDF (fitz)](https://pymupdf.readthedocs.io/en/latest/)
 - [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
 - [pytesseract](https://pypi.org/project/pytesseract/)
 - [Pillow (PIL)](https://pillow.readthedocs.io/)
+
+ Plataforma (front e back-end)
+- [next.js](https://nextjs.org/)
+- [postgreSQL](https://www.postgresql.org/)
 
 ---
 
