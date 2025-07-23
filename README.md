@@ -153,7 +153,14 @@ Parte do json real de output:
 ```
 esse Json é enviado para o back-end da plataforma onde é armazenado no banco de dados para futuras consultas pela plataforma.
 
----
+## 🤔 Limitações e Melhorias Futuras
+Apesar de funcional, o projeto possui pontos que podem ser aprimorados:
+
+Qualidade do OCR: A precisão da extração depende diretamente da qualidade (resolução, limpeza) do PDF de origem. Documentos de baixa qualidade podem gerar erros de transcrição.
+
+Flexibilidade do Parser: Layouts muito atípicos ou formatações inesperadas podem exigir ajustes nas expressões regulares (regex) utilizadas no parser.py.
+
+Processamento de Imagens e Tabelas: Atualmente, o foco é em texto. A extração de imagens ou tabelas contidas nas questões não é suportada.
 
 ## 🧠 Tecnologias usadas
  Visão Computacional
